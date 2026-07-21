@@ -1,0 +1,250 @@
+/* ==========================================================
+   DPT Education in Pakistan - Master Stylesheet (CSS3)
+   Responsive Sidebar + Content Layout
+   ========================================================== */
+
+:root {
+    --primary: #005f73;
+    --primary-dark: #0a9396;
+    --accent: #94d2bd;
+    --light-bg: #f8f9fa;
+    --text-color: #2b2d42;
+    --sidebar-bg: #1d2d44;
+    --sidebar-hover: #0d1b2a;
+    --active-color: #00b4d8;
+    --card-bg: #ffffff;
+    --border-color: #e9ecef;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Banner */
+.site-header {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.site-header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Main Layout: Left Sidebar + Main Content */
+.layout-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+/* Left Vertical Navigation Bar */
+.sidebar {
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    color: #ffffff;
+    flex-shrink: 0;
+    padding: 1.5rem 0;
+}
+
+.sidebar h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 1.5rem 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: var(--accent);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #e0e1dd;
+    text-decoration: none;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--sidebar-hover);
+    color: #ffffff;
+    padding-left: 1.8rem;
+}
+
+.sidebar ul li a.active {
+    background-color: var(--sidebar-hover);
+    color: #ffffff;
+    border-left-color: var(--active-color);
+    font-weight: 600;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    max-width: 1100px;
+}
+
+.main-content h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+}
+
+.main-content h3 {
+    color: var(--primary-dark);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.main-content p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.main-content ul, .main-content ol {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+.main-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Images & Visuals */
+.responsive-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.img-caption {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* Card Grids */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: var(--light-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Info Box / Highlight */
+.info-box {
+    background-color: #e0f2f1;
+    border-left: 5px solid var(--primary-dark);
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Footer Section */
+.site-footer {
+    background-color: var(--sidebar-bg);
+    color: #e0e1dd;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.site-footer p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Responsive Media Queries (Tablets and Mobile) */
+@media (max-width: 900px) {
+    .layout-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar ul li a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .sidebar ul li a:hover, .sidebar ul li a.active {
+        padding-left: 0.8rem;
+        border-left-color: transparent;
+        border-bottom-color: var(--active-color);
+    }
+
+    .main-content {
+        padding: 1.5rem;
+    }
+}
