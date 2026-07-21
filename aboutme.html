@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | My Story</title>
+  <meta name="description" content="About me page for a college HTML5/CSS project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand-row">
+      <a href="index.html">
+        <div class="site-title">My Story</div>
+        <div class="site-tagline">A running record of who I am, where I come from, and where I'm headed</div>
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html"><span class="chapter-no">00</span>Home</a></li>
+        <li><a href="aboutme.html" aria-current="page"><span class="chapter-no">01</span>About Me</a></li>
+        <li><a href="myfamily.html"><span class="chapter-no">02</span>My Family</a></li>
+        <li><a href="myeducation.html"><span class="chapter-no">03</span>My Education</a></li>
+        <li><a href="myfutureplans.html"><span class="chapter-no">04</span>My Future Plans</a></li>
+        <li><a href="contactme.html"><span class="chapter-no">05</span>Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-eyebrow">Chapter 01</div>
+    <h1>About Me</h1>
+    <p class="page-intro">
+      A short introduction to who I am outside of the classroom — my personality, the things
+      I'm curious about, and how I like to spend a free Saturday.
+    </p>
+
+    <section class="split" aria-labelledby="intro-heading">
+      <div>
+        <h2 id="intro-heading">The short version</h2>
+        <p>
+          I'm a full-time student currently in my second year, splitting my time between lectures,
+          part-time freelance work, and far too many browser tabs. I grew up in a small town, moved
+          for university, and I'm slowly getting used to city life, one bus route at a time.
+        </p>
+        <p>
+          I'd describe myself as curious more than clever — I tend to learn best by breaking things
+          apart and rebuilding them, which is roughly how I ended up enjoying web development.
+        </p>
+      </div>
+      <img src="https://placehold.co/480x360/16324f/f6f3ea?text=Portrait+Photo" alt="Placeholder portrait photo">
+    </section>
+
+    <section aria-labelledby="likes-heading">
+      <h2 id="likes-heading">Things I enjoy</h2>
+      <p>
+        Outside of coursework, I read more non-fiction than I probably should admit, I'm a
+        below-average but enthusiastic badminton player, and I keep a small notebook of half-finished
+        side project ideas. I also volunteer occasionally with a local youth tutoring group, which
+        has taught me more about patience than any lecture has.
+      </p>
+      <div class="gallery">
+        <figure>
+          <img src="https://placehold.co/400x300/4f7c78/f6f3ea?text=Reading" alt="Placeholder photo of books on a desk">
+          <figcaption>My current stack of half-read books</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/c9a227/16324f?text=Badminton" alt="Placeholder photo of a badminton court">
+          <figcaption>Sunday badminton with friends from my hostel</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/16324f/f6f3ea?text=Tutoring" alt="Placeholder photo of a tutoring session">
+          <figcaption>Volunteering with a weekend tutoring programme</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="values-heading">
+      <h2 id="values-heading">What matters to me</h2>
+      <p>
+        I care a lot about doing ordinary things properly — showing up on time, writing clean code
+        even for small assignments, and being someone people can rely on in a group project. None of
+        that is glamorous, but it's the version of myself I'm trying to build.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>My Story</h4>
+        <p>A personal portfolio site built with semantic HTML5 and hand-written CSS3 for a college web development assignment.</p>
+      </div>
+      <div>
+        <h4>Chapters</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="myfamily.html">My Family</a></li>
+          <li><a href="myeducation.html">My Education</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="myfutureplans.html">My Future Plans</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="#main-content">Back to top</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 My Story — Built for a college HTML5 &amp; CSS3 project. All content is dummy text for demonstration only.
+    </div>
+  </footer>
+
+</body>
+</html>

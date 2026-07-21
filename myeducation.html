@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Education | My Story</title>
+  <meta name="description" content="My education page for a college HTML5/CSS project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand-row">
+      <a href="index.html">
+        <div class="site-title">My Story</div>
+        <div class="site-tagline">A running record of who I am, where I come from, and where I'm headed</div>
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html"><span class="chapter-no">00</span>Home</a></li>
+        <li><a href="aboutme.html"><span class="chapter-no">01</span>About Me</a></li>
+        <li><a href="myfamily.html"><span class="chapter-no">02</span>My Family</a></li>
+        <li><a href="myeducation.html" aria-current="page"><span class="chapter-no">03</span>My Education</a></li>
+        <li><a href="myfutureplans.html"><span class="chapter-no">04</span>My Future Plans</a></li>
+        <li><a href="contactme.html"><span class="chapter-no">05</span>Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-eyebrow">Chapter 03</div>
+    <h1>My Education</h1>
+    <p class="page-intro">
+      A quick walk through the schools and subjects that got me here, from a fairly ordinary
+      primary school to the degree I'm currently working on.
+    </p>
+
+    <section aria-labelledby="timeline-heading">
+      <h2 id="timeline-heading">The path so far — shown left to right</h2>
+      <p>
+        These are, in order, the four stages of school that shaped how I think and what I decided
+        to study. Scroll sideways on smaller screens to see all four.
+      </p>
+      <div class="gallery row">
+        <figure>
+          <img src="https://placehold.co/400x300/16324f/f6f3ea?text=Primary+School" alt="Placeholder photo of a primary school building">
+          <figcaption>Primary School — where I first liked maths more than I let on</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/4f7c78/f6f3ea?text=Middle+School" alt="Placeholder photo of a middle school classroom">
+          <figcaption>Middle School — my first science fair project, a very shaky volcano</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/c9a227/16324f?text=High+School" alt="Placeholder photo of a high school hallway">
+          <figcaption>High School — picked computer science as an elective, never looked back</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.co/400x300/16324f/f6f3ea?text=University" alt="Placeholder photo of a university building">
+          <figcaption>University — currently in year two of my Computer Science degree</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="current-heading">
+      <h2 id="current-heading">What I'm studying now</h2>
+      <p>
+        I'm working toward a degree in Computer Science, with coursework spanning data structures,
+        databases, and — most relevantly to this page — web technologies. This site itself is a
+        submission for that last module, built from scratch with semantic HTML5 and a single
+        hand-written stylesheet.
+      </p>
+      <p>
+        Outside required courses, I've been slowly teaching myself more about front-end design,
+        mostly by rebuilding pages I like the look of and figuring out why they work.
+      </p>
+    </section>
+
+    <section aria-labelledby="favourites-heading">
+      <h2 id="favourites-heading">Subjects I've enjoyed most</h2>
+      <p>
+        Data Structures for the puzzle-solving, Technical Writing for forcing me to explain things
+        clearly, and — somewhat unexpectedly — a first-year Statistics module that made me much
+        more comfortable reading numbers critically instead of taking them at face value.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>My Story</h4>
+        <p>A personal portfolio site built with semantic HTML5 and hand-written CSS3 for a college web development assignment.</p>
+      </div>
+      <div>
+        <h4>Chapters</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="myfamily.html">My Family</a></li>
+          <li><a href="myeducation.html">My Education</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="myfutureplans.html">My Future Plans</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="#main-content">Back to top</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 My Story — Built for a college HTML5 &amp; CSS3 project. All content is dummy text for demonstration only.
+    </div>
+  </footer>
+
+</body>
+</html>
